@@ -1,6 +1,9 @@
-//your JS code here. If required
-let str1 = ""
-for(let value of str){
-	str1 += value.toUpperCase()
-}
-return str1
+let input = document.getElementById("fname");
+input.addEventListener("change",()=>{
+	let upperValue = "";
+	input.value.split("").forEach(char => {
+		upperValue += char.toUpperCase();
+	})
+	input.value = upperValue;
+})
+
